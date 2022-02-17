@@ -197,6 +197,11 @@ Alternatively, you can add your message in the command itself:
 git commit -m "commit message"
 ```
 
+To commit **all** changes:
+```
+git commit -a -m "commit message"
+```
+
 ### 2. Send commits to the Github server
 
 For first time commits (and also on new branches), associate your local branch to the branch from your server repository.
