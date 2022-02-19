@@ -289,3 +289,20 @@ If you wish to go back to a branch, simply input:
 git checkout branchName
 ``` 
 
+### 6. Git stash
+ 
+Temporarily saves changes (like commits) into a list (aka `stash`) local to your system:
+```
+git stash
+```
+
+Give the stash a name:
+```
+git stash save <mesage>
+```
+
+View the list of changes:
+```
+git stash list
+```
+
