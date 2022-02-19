@@ -298,7 +298,7 @@ git stash
 
 Give the stash a name:
 ```
-git stash save <mesage>
+git stash save <message>
 ```
 
 View the list of changes:
