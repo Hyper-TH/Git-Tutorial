@@ -202,6 +202,7 @@ To commit **all** changes:
 git commit -a -m "commit message"
 ```
 
+
 ### 2. Send commits to the Github server
 
 For first time commits (and also on new branches), associate your local branch to the branch from your server repository.
@@ -223,19 +224,7 @@ This essentially shows the changes of your repository.
 git status
 ```
 
-### 2. Create a branch
-
-```
-git checkout -b someBranch
-```
-Every changes from there on will be saved on that branch. Remember to associate the local branch to the server branch on initial commits.
-
-To return or change to a different branch:
-```
-git checkout master
-```
-
-### 3. Resolving merge conflicts 
+### 2. Resolving merge conflicts 
 Merge a branch to the current branch (i.e., merge someBranch to master):
 
 ```
@@ -255,7 +244,7 @@ Open the conflicted file in your chosen editor (in this case Visual Studio Code)
 
 Choose which change to apply, save the file, then add the changes to the `staging area`, and commit changes.
 
-### 4. Resolving merge conflicts involving binary files
+### 3. Resolving merge conflicts involving binary files
 
 If you wish to save the changes from a different branch:
 ```
@@ -269,16 +258,16 @@ git checkout --ours test.bmp
 
 Then commit changes.
 
-### 5. Git log
+### 4. Git log
 
 Show the log of all commits on your current branch:
 ```
 git log
 ```
 
-To `rollback` to a previous commit, select the 40 digit hexadecimal number by double clicking and pressing enter. Then, press `q` to exit the log and input the following:
+To `rollback` to a previous commit, select the 40 digit hexadecimal number by double clicking and pressing enter. Then, press `q` to exit the log and input the following (without the brackets):
 ```
-git checkout your40DigitHexadecimal
+git checkout <your40DigitHexadecimal>
 ```
 This would rollback the system to that particular ccommit.
 
@@ -286,10 +275,10 @@ By doing this, you would now be in a `detached-head state`. Meaning no changes/e
 
 If you wish to go back to a branch, simply input: 
 ```
-git checkout branchName
+git checkout <branchName>
 ``` 
 
-### 6. Git stash
+### 5. Git stash
  
 Temporarily saves changes (like commits) into a list (aka `stash`) local to your system:
 ```
@@ -306,3 +295,37 @@ View the list of changes:
 git stash list
 ```
 
+### 6. Git commit
+
+Take most recent commit and add new staged changes:
+```
+git commit --ammend
+```
+
+Change most recent Git commit message:
+```
+git commit --amend -m "message here"
+```
+
+### 7. Git branch
+
+To create a branch: 
+```
+git checkout -b <someBranch>
+```
+Every changes from there on will be saved on that branch. Remember to associate the local branch to the server branch on initial commits.
+
+To return or change to a different branch:
+```
+git checkout <branchName>
+```
+
+To check list of branches (local):
+```
+git branch
+```
+
+To check list of branches (remote):
+```
+git branch -r
+```
