@@ -1,4 +1,19 @@
-# Setting up your local project folder (Windows)
+## Download sources:
+
+- Visual Studio Code <br>
+    [Download](https://code.visualstudio.com/download)
+
+- Git <br>
+    [Download (Windows)](https://git-scm.com/download/win)
+
+- Extensions (optional) <br>
+    [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) <br>
+    [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame) <br>
+    [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) <br>
+    [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) <br>
+    [.gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore) <br>
+
+# Setting up your local project folder for a Java project (Windows)
 
 ### 1. Creating the root directory
 Create the directory using `mkdir` and go into that directory using `cd`. 
