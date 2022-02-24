@@ -13,6 +13,14 @@
     [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) <br>
     [.gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore) <br>
 
+## Enable git in Visual Studio Code
+
+Go to `File` -> `Preferences` <br>
+Go to `Settings` <br>
+Type `Git: Enabled` in the search bar <br>
+Make sure that the box is ticked <br>
+
+![Sketch](assets/Picture13.png)
 # Setting up your local project folder for a Java project (Windows)
 
 ### 1. Creating the root directory
@@ -343,4 +351,26 @@ git branch
 To check list of branches (remote):
 ```
 git branch -r
+```
+
+### 8. Git clone and fork
+
+To clone a repository to your local system:
+```
+git clone https://github.com/YOURGITUSERNAME/REPONAME
+```
+
+To set the upstream remote:
+```
+git remote add upstream https://github.com/ORIGINALGITUSER/REPONAME
+```
+
+Note that `origin` is the alias of your local repo, while `upstream` is the <b>original source</b> of the repo.
+
+To update your local master branch to the upstream master branch:
+```
+git fetch
+git checkout master
+git pull upstream master
+git push
 ```
