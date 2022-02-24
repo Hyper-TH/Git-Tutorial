@@ -13,14 +13,28 @@
     [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) <br>
     [.gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore) <br>
 
-## Enable git in Visual Studio Code
+# Setting up Git in Visual Studio Code
 
+### 1. Enable Git
 Go to `File` -> `Preferences` <br>
 Go to `Settings` <br>
 Type `Git: Enabled` in the search bar <br>
 Make sure that the box is ticked <br>
 
 ![Sketch](assets/Picture13.png)
+
+### 2. Configure your account details
+
+Provide your `email`:
+```
+git config --global user.email "yourMail@example.com"
+```
+
+Provide your git `user name`:
+```
+git config --global user.name "your-name"
+```
+
 # Setting up your local project folder for a Java project (Windows)
 
 ### 1. Creating the root directory
