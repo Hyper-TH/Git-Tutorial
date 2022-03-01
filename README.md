@@ -388,3 +388,9 @@ git checkout master
 git pull upstream master
 git push
 ```
+
+# References / Links
+
+- [Cheat sheet](https://ndpsoftware.com/git-cheatsheet.html#loc=stash;)
+
+- [Git document](https://git-scm.com/docs)
