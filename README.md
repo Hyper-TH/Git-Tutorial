@@ -357,6 +357,16 @@ To return or change to a different branch:
 git checkout <branchName>
 ```
 
+To delete a branch:
+```
+git branch -d <branchName>
+```
+
+To force delete a branch:
+```
+git branch -D <branchName>
+```
+
 To check list of branches (local):
 ```
 git branch
@@ -388,6 +398,31 @@ git checkout master
 git pull upstream master
 git push
 ```
+
+### 9. Clear Git cache
+
+```
+git rm --cached <folderName>
+```
+
+### 10. Submodules
+
+If your GitHub repository shows this icon:
+
+![Sketch](assets/Picture14.jpg)
+
+Try
+```
+git add <folderName>
+```
+
+If results in an error such as:
+```
+xxx submodule xxx
+```
+
+Clear Git cache and try adding again
+
 
 # References / Links
 
